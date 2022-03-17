@@ -3,10 +3,9 @@ var db = require('../database');
 
 // create an schema
 var userSchema = new mongoose.Schema({
-            fullName: String,
-            emailAddress:String,
-            city:String,
-            country:String
+            coursename: String,
+            place:String,
+            coursedate:String
         });
 
 userTable=mongoose.model('users',userSchema);

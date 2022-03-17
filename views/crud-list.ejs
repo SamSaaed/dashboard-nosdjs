@@ -88,17 +88,16 @@ body{
 <!--====form section start====-->
     <div class="table-data">
         <div class="list-title">
- <h2>CRUD List</h2>
-            <a href="#">CRUD From</a>
+ <h2>ADD COURSES</h2>
+            <a href="#">COURSES</a>
             </div>
 <br><br>
     <table border="1" >
         <tr>
             <th>S.N</th>
-            <th>Full Name</th>
-            <th>Email Address</th>
-            <th>City</th>
-            <th>Country</th>
+            <th>Course Name</th>
+            <th>Place</th>
+            <th>Course Date</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
@@ -110,10 +109,9 @@ body{
         %>
         <tr>
             <td><%=i; %></td>
-            <td><%=data.fullName %></td>
-            <td><%=data.emailAddress %></td>
-            <td><%=data.city %></td>
-            <td><%=data.country %></td>
+            <td><%=data.coursename %></td>
+            <td><%=data.place %></td>
+            <td><%=data.coursedate %></td>
             <td><a href="/edit/<%=data.id%>">Edit</a></td>
             <td><a href="/delete/<%=data.id%>">Delete</a></td>
         </tr>

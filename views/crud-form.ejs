@@ -53,20 +53,19 @@ button[type=submit]:hover {
 <!--====form section start====-->
 <div class="user-detail">
     <div class="form-title">
-    <h2>CRUD Form</h2>
-    <a href="/data-list">CRUD List</a>
+    <h2>COURSES</h2>
+    <a href="/data-list">ADD COURES</a>
     
     </div>
     <hr>
     <form action="/create" method="post">
-          <label>Full Name</label>
-          <input type="text" placeholder="Enter Full Name" name="fullName" required value="<%=(typeof userData!='undefined')? userData.fullName:''%>">
-          <label>Email Address</label>
-          <input type="email" placeholder="Enter Email Address" name="emailAddress" required value="<%=(typeof userData!='undefined')? userData.emailAddress:''%>">
-          <label>City</label>
-          <input type="city" placeholder="Enter Full City" name="city" required value="<%=(typeof userData!='undefined')? userData.city:''%>">
-          <label>Country</label>
-          <input type="text" placeholder="Enter Full Country" name="country" required value="<%=(typeof userData!='undefined')? userData.country:''%>">
+          <label>Course Name</label>
+          <input type="text" placeholder="Enter Course Name" name="coursename" required value="<%=(typeof userData!='undefined')? userData.coursename:''%>">
+          <label>Place</label>
+          <input type="text" placeholder="Enter Place" name="place" required value="<%=(typeof userData!='undefined')? userData.place:''%>">
+          <label>Course Date</label>
+          <input type="city" placeholder="Enter Course Date" name="coursedate" required value="<%=(typeof userData!='undefined')? userData.coursedate:''%>">
+         
           <button type="submit">Submit</button>
     </form>
         </div>
